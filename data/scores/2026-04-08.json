@@ -1,0 +1,756 @@
+{
+  "date": "2026-04-08",
+  "fetchedAt": "2026-04-08T20:42:28.909Z",
+  "resorts": [
+    {
+      "id": "val-thorens",
+      "name": "Val Thorens",
+      "totalScore": 3,
+      "confidence": "high",
+      "summary": "Not great — no fresh snow in days and conditions are below average.",
+      "subScores": {
+        "snow": 0,
+        "weather": 8,
+        "altitude": 1.9,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 3.3,
+        "avgTemp48h": 3.5,
+        "windSpeed": 8,
+        "windGusts": 13,
+        "visibility": 39340,
+        "cloudCover": 0,
+        "freezingLevel": 3470,
+        "snowDepth": 90,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 5.8,
+        "forecastWindSpeed24h": 18,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 1,
+          "tempMax": 6,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -1,
+          "tempMax": 5,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": 3,
+          "tempMax": 9,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": -2,
+          "tempMax": 3,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "courchevel",
+      "name": "Courchevel",
+      "totalScore": 2.8,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 8.7,
+        "avgTemp48h": 9,
+        "windSpeed": 8,
+        "windGusts": 10,
+        "visibility": 40180,
+        "cloudCover": 0,
+        "freezingLevel": 3450,
+        "snowDepth": 21,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 13.3,
+        "forecastWindSpeed24h": 20,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 6,
+          "tempMax": 13,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 12,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 14,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": -1,
+          "tempMax": 7,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "meribel",
+      "name": "Méribel",
+      "totalScore": 2.6,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 4
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 7.9,
+        "avgTemp48h": 9.3,
+        "windSpeed": 11,
+        "windGusts": 10,
+        "visibility": 39500,
+        "cloudCover": 0,
+        "freezingLevel": 3470,
+        "snowDepth": 0,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 14.6,
+        "forecastWindSpeed24h": 17,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 15,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 4,
+          "tempMax": 14,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 6,
+          "tempMax": 14,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": 0,
+          "tempMax": 7,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "la-plagne",
+      "name": "La Plagne",
+      "totalScore": 2.8,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 7.3,
+        "avgTemp48h": 8,
+        "windSpeed": 8,
+        "windGusts": 12,
+        "visibility": 36360,
+        "cloudCover": 0,
+        "freezingLevel": 3460,
+        "snowDepth": 110,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 11.8,
+        "forecastWindSpeed24h": 19,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 12,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 4,
+          "tempMax": 11,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 13,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": -1,
+          "tempMax": 6,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "les-arcs",
+      "name": "Les Arcs",
+      "totalScore": 2.8,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 8.8,
+        "avgTemp48h": 8.5,
+        "windSpeed": 6,
+        "windGusts": 8,
+        "visibility": 39000,
+        "cloudCover": 0,
+        "freezingLevel": 3470,
+        "snowDepth": 119,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 12.1,
+        "forecastWindSpeed24h": 21,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 6,
+          "tempMax": 12,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 11,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 6,
+          "tempMax": 14,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": 0,
+          "tempMax": 7,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "tignes",
+      "name": "Tignes",
+      "totalScore": 2.8,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 6.8,
+        "avgTemp48h": 7.3,
+        "windSpeed": 9,
+        "windGusts": 16,
+        "visibility": 40180,
+        "cloudCover": 0,
+        "freezingLevel": 3490,
+        "snowDepth": 120,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 10.6,
+        "forecastWindSpeed24h": 13,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 4,
+          "tempMax": 11,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 3,
+          "tempMax": 9,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 3,
+          "tempMax": 10,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": 2,
+          "tempMax": 5,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "val-disere",
+      "name": "Val d'Isère",
+      "totalScore": 2.8,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 6,
+        "avgTemp48h": 5.7,
+        "windSpeed": 2,
+        "windGusts": 3,
+        "visibility": 41220,
+        "cloudCover": 0,
+        "freezingLevel": 3480,
+        "snowDepth": 119,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 10.1,
+        "forecastWindSpeed24h": 19,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 2,
+          "tempMax": 10,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 1,
+          "tempMax": 9,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 3,
+          "tempMax": 10,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": 2,
+          "tempMax": 5,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "alpe-dhuez",
+      "name": "Alpe d'Huez",
+      "totalScore": 2.8,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 7.8,
+        "avgTemp48h": 7.4,
+        "windSpeed": 2,
+        "windGusts": 5,
+        "visibility": 40180,
+        "cloudCover": 0,
+        "freezingLevel": 3490,
+        "snowDepth": 54,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 10,
+        "forecastWindSpeed24h": 20,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 6,
+          "tempMax": 10,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 9,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 5,
+          "tempMax": 11,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 3.2,
+          "tempMin": -1,
+          "tempMax": 5,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "les-deux-alpes",
+      "name": "Les 2 Alpes",
+      "totalScore": 2.6,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 4
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 9.9,
+        "avgTemp48h": 10.1,
+        "windSpeed": 5,
+        "windGusts": 5,
+        "visibility": 40060,
+        "cloudCover": 0,
+        "freezingLevel": 3480,
+        "snowDepth": 0,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 15.9,
+        "forecastWindSpeed24h": 20,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 7,
+          "tempMax": 16,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 6,
+          "tempMax": 15,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 7,
+          "tempMax": 14,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 1.9,
+          "tempMin": 0,
+          "tempMax": 7,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    },
+    {
+      "id": "chamonix",
+      "name": "Chamonix Mont-Blanc",
+      "totalScore": 2.8,
+      "confidence": "high",
+      "summary": "Spring skiing — warm and sunny. Go early for the best snow before it softens.",
+      "subScores": {
+        "snow": 0,
+        "weather": 7,
+        "altitude": 1.8,
+        "trend": 5
+      },
+      "rawData": {
+        "freshSnow24h": 0,
+        "freshSnow48h": 0,
+        "freshSnow72h": 0,
+        "temperature": 8.7,
+        "avgTemp48h": 8.7,
+        "windSpeed": 5,
+        "windGusts": 11,
+        "visibility": 41540,
+        "cloudCover": 0,
+        "freezingLevel": 3490,
+        "snowDepth": 164,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": true,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 10.9,
+        "forecastWindSpeed24h": 10,
+        "forecastRain24h": false,
+        "weatherCode": 0,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-04-09",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 7,
+          "tempMax": 11,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-10",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 4,
+          "tempMax": 10,
+          "summary": "Warm",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-04-11",
+          "estimatedScore": 3.5,
+          "snowfall": 0,
+          "tempMin": 4,
+          "tempMax": 11,
+          "summary": "Warm",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-04-12",
+          "estimatedScore": 2,
+          "snowfall": 0,
+          "tempMin": -1,
+          "tempMax": 4,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
+    }
+  ]
+}

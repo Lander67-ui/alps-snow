@@ -3,25 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --score-excellent: #1B7D3A;
+  --score-good:      #4CAF50;
+  --score-moderate:  #F5A623;
+  --score-poor:      #E85D3A;
+  --score-bad:       #C62828;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  .score-excellent { color: var(--score-excellent); }
+  .score-good      { color: var(--score-good); }
+  .score-moderate  { color: var(--score-moderate); }
+  .score-poor      { color: var(--score-poor); }
+  .score-bad       { color: var(--score-bad); }
+
+  .bg-score-excellent { background-color: var(--score-excellent); }
+  .bg-score-good      { background-color: var(--score-good); }
+  .bg-score-moderate  { background-color: var(--score-moderate); }
+  .bg-score-poor      { background-color: var(--score-poor); }
+  .bg-score-bad       { background-color: var(--score-bad); }
 }

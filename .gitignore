@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Alps Snow — raw API dumps (large debug files, not needed in git)
+/data/raw/
+
+# Alps Snow — feedback is user data, keep local only
+/data/feedback/
+
+# Alps Snow — scores ARE committed to git so Vercel can read them at build time
+# /data/scores/ is intentionally NOT ignored
