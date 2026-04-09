@@ -325,6 +325,7 @@ export function buildForecastDays(
       snowfall: Math.round(snow * 10) / 10,
       tempMin: Math.round(tMin),
       tempMax: Math.round(tMax),
+      windMax: 0, // not available in this code path; open-meteo.ts populates it
       summary,
       confidence: i <= 2 ? "reliable" : "estimate",
     });

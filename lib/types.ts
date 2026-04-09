@@ -1,5 +1,3 @@
-// Shared TypeScript types used across the whole project
-
 export type Confidence = "high" | "medium" | "low";
 
 export interface SubScores {
@@ -10,38 +8,39 @@ export interface SubScores {
 }
 
 export interface RawWeatherData {
-  freshSnow24h: number;      // cm of snowfall in last 24h
-  freshSnow48h: number;      // cm of snowfall in last 48h
-  freshSnow72h: number;      // cm of snowfall in last 72h
-  temperature: number;       // current temperature at primaryAltitude (°C)
-  avgTemp48h: number;        // average temperature over last 48h (°C)
-  windSpeed: number;         // current wind speed (km/h)
-  windGusts: number;         // current wind gusts (km/h)
-  visibility: number;        // visibility in metres (derived from weathercode/cloudcover)
-  cloudCover: number;        // cloud cover 0–100%
-  freezingLevel: number;     // current freezing level altitude (m)
-  snowDepth: number;         // total snowpack depth (cm)
-  snowfallForecast24h: number; // expected snowfall next 24h (cm)
-  snowfallForecast48h: number; // expected snowfall next 24–48h (cm)
-  rainDetected24h: boolean;  // rain (not snow) detected in last 24h at primary altitude
-  rainDetected48h: boolean;  // rain detected in last 25–48h
-  rainDetected72h: boolean;  // rain detected in last 49–72h
-  activeSnowfallRate: number; // current snowfall rate (cm/h, average of last few hours)
-  forecastMaxTemp48h: number; // max forecast temperature in next 48h (for warming trend)
-  forecastWindSpeed24h: number; // max forecast wind in next 24h
-  forecastRain24h: boolean;   // rain forecast in next 24h
-  weatherCode: number;        // WMO weather code for today
-  dataCompleteness: number;   // 0–1, fraction of fields that have real (non-fallback) data
+  freshSnow24h: number;
+  freshSnow48h: number;
+  freshSnow72h: number;
+  temperature: number;
+  avgTemp48h: number;
+  windSpeed: number;
+  windGusts: number;
+  visibility: number;
+  cloudCover: number;
+  freezingLevel: number;
+  snowDepth: number;
+  snowfallForecast24h: number;
+  snowfallForecast48h: number;
+  rainDetected24h: boolean;
+  rainDetected48h: boolean;
+  rainDetected72h: boolean;
+  activeSnowfallRate: number;
+  forecastMaxTemp48h: number;
+  forecastWindSpeed24h: number;
+  forecastRain24h: boolean;
+  weatherCode: number;
+  dataCompleteness: number;
 }
 
 export interface ForecastDay {
-  date: string;           // YYYY-MM-DD
-  estimatedScore: number; // approximate score for that day
-  snowfall: number;       // expected snowfall (cm)
-  tempMin: number;        // min temperature (°C)
-  tempMax: number;        // max temperature (°C)
-  summary: string;        // one-word label
-  confidence: "reliable" | "estimate"; // day 1–2 = reliable, 3–5 = estimate
+  date: string;
+  estimatedScore: number;
+  snowfall: number;
+  tempMin: number;
+  tempMax: number;
+  windMax: number;       // max wind speed (km/h)
+  summary: string;
+  confidence: "reliable" | "estimate";
 }
 
 export interface ResortScore {
@@ -53,12 +52,12 @@ export interface ResortScore {
   subScores: SubScores;
   rawData: RawWeatherData;
   forecast: ForecastDay[];
-  error?: string; // set if data fetch failed for this resort
+  error?: string;
 }
 
 export interface DailyScores {
-  date: string;        // YYYY-MM-DD
-  fetchedAt: string;   // ISO timestamp
+  date: string;
+  fetchedAt: string;
   resorts: ResortScore[];
 }
 

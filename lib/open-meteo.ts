@@ -222,6 +222,7 @@ function parseWeatherData(data: OpenMeteoResponse, resort: Resort): FetchResult 
     const tMin = daily.temperature_2m_min[idx] ?? 0;
     const tMax = daily.temperature_2m_max[idx] ?? 0;
     const precip = daily.precipitation_sum[idx] ?? 0;
+    const windMax = Math.round(daily.windspeed_10m_max[idx] ?? 0);
 
     // Compute average daily freezing level from hourly data for this day
     const dayDate = daily.time[idx];
@@ -269,6 +270,7 @@ function parseWeatherData(data: OpenMeteoResponse, resort: Resort): FetchResult 
       snowfall: round1(snow),
       tempMin: Math.round(tMin),
       tempMax: Math.round(tMax),
+      windMax,
       summary,
       confidence: i <= 2 ? "reliable" : "estimate",
     });

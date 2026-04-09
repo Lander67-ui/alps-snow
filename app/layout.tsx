@@ -14,55 +14,46 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Alps Snow — French Alps Snow Quality Scores",
+  title: "Alps Snow — French Alps Snow Quality",
   description:
-    "Daily snow quality scores for 10 French Alps ski resorts. Updated every morning using live weather data.",
+    "Search any French Alps ski resort to see today's snow quality score and the upcoming forecast.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-50 text-slate-800`}
         style={{ fontFamily: "var(--font-geist-sans), system-ui, sans-serif" }}
       >
-        {/* Site header */}
         <header className="bg-white border-b border-slate-200 sticky top-0 z-20">
-          <div className="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2">
-              <span className="text-lg font-bold tracking-tight text-slate-900">⛷ Alps Snow</span>
+          <div className="max-w-4xl mx-auto px-4 h-13 flex items-center justify-between" style={{ height: "52px" }}>
+            <a href="/" className="flex items-center gap-2 shrink-0">
+              <span className="text-[17px] font-bold tracking-tight text-slate-900">⛷ Alps Snow</span>
             </a>
-            <nav className="flex items-center gap-5 text-sm text-slate-500">
-              <a href="/" className="hover:text-slate-800 transition-colors">Resorts</a>
+            <nav className="flex items-center gap-6 text-sm text-slate-500">
+              <a href="/" className="hover:text-slate-800 transition-colors">Home</a>
+              <a href="/ranking" className="hover:text-slate-800 transition-colors">Ranking</a>
               <a href="/about" className="hover:text-slate-800 transition-colors">About</a>
             </nav>
           </div>
         </header>
 
-        {/* Page content */}
-        <main className="max-w-3xl mx-auto px-4 py-6 min-h-[calc(100vh-6rem)]">
+        <main className="max-w-4xl mx-auto px-4 py-8 min-h-[calc(100vh-52px-68px)]">
           {children}
         </main>
 
-        {/* Footer */}
-        <footer className="border-t border-slate-200 mt-12">
-          <div className="max-w-3xl mx-auto px-4 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-slate-400">
+        <footer className="border-t border-slate-200 mt-16">
+          <div className="max-w-4xl mx-auto px-4 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-slate-400">
             <span>
-              Alps Snow · Weather data from{" "}
-              <a
-                href="https://open-meteo.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-slate-600"
-              >
+              Alps Snow · Weather from{" "}
+              <a href="https://open-meteo.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-600">
                 Open-Meteo
               </a>
             </span>
-            <span>Scores are estimates. Always check local conditions before heading out.</span>
+            <span>Scores are estimates. Always check local conditions.</span>
           </div>
         </footer>
       </body>
