@@ -1,3 +1,14 @@
+
+import DataFreshness from "@/app/components/DataFreshness";
+
+<div className="flex flex-col items-center">
+
+{data && (
+  <div className="w-full max-w-xl px-4">
+    <DataFreshness fetchedAt={data.fetchedAt} />
+  </div>
+)}
+
 import Link from "next/link";
 import { resorts } from "@/resorts.config";
 import { loadLatestScores } from "@/lib/data-store";
