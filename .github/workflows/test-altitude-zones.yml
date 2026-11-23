@@ -45,7 +45,9 @@ jobs:
           console.log("Same central GPS coordinates, different model elevations.");
           console.log("These are weather-model estimates, not independent stations.\n");
 
-          for (const trial of trials) {
+          
+          async function main() {
+for (const trial of trials) {
             const base = getResortById(trial.id);
             if (!base) throw new Error(`Unknown resort: ${trial.id}`);
             console.log(`\n=== ${base.name} ===`);
@@ -71,6 +73,12 @@ jobs:
             console.log(`Weighted three-height score: ${weightedTotal.toFixed(1)}/10`);
             console.log("Weights: 20% low + 50% middle + 30% high.");
           }
+          }
+          main().catch((error) => {
+            console.error(error);
+            process.exit(1);
+          });
+
 
           console.log("\nTest finished. No live resort scores were changed.");
           EOF
