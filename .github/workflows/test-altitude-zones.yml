@@ -1,0 +1,77 @@
+name: Test Three Altitude Zones
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare-zones:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Alps Snow
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compare three heights without changing live data
+        shell: bash
+        run: |
+          cat > scripts/compare-zones-temp.ts <<'EOF'
+          import { getResortById } from "../resorts.config";
+          import { fetchResortWeather } from "../lib/open-meteo";
+          import { scoreResort } from "../lib/scoring";
+          import { loadLatestScores } from "../lib/data-store";
+
+          const trials = [
+            { id: "tignes", altitudes: [1750, 2300, 3000] },
+            { id: "val-thorens", altitudes: [2350, 2700, 3100] },
+            { id: "les-deux-alpes", altitudes: [1650, 2400, 3200] },
+          ];
+          const labels = ["LOW", "MIDDLE", "HIGH"];
+          const weights = [0.2, 0.5, 0.3];
+          const existing = loadLatestScores();
+          const sleep = (ms: number) => new Promise<void>(r => setTimeout(r, ms));
+
+          console.log("ALPS SNOW — ALTITUDE-ONLY PROOF OF CONCEPT");
+          console.log("Same central GPS coordinates, different model elevations.");
+          console.log("These are weather-model estimates, not independent stations.\n");
+
+          for (const trial of trials) {
+            const base = getResortById(trial.id);
+            if (!base) throw new Error(`Unknown resort: ${trial.id}`);
+            console.log(`\n=== ${base.name} ===`);
+            let weightedTotal = 0;
+
+            for (let i = 0; i < trial.altitudes.length; i++) {
+              const altitude = trial.altitudes[i];
+              const zone = { ...base, primaryAltitude: altitude };
+              const { weather } = await fetchResortWeather(zone);
+              const score = scoreResort(weather, zone);
+              weightedTotal += score.totalScore * weights[i];
+              console.log(
+                `${labels[i].padEnd(6)} | ${altitude} m | Score ${score.totalScore.toFixed(1)}/10` +
+                ` | Temp ${weather.temperature} C | Snow depth ${weather.snowDepth} cm` +
+                ` | Fresh snow ${weather.freshSnow24h} cm`
+              );
+              await sleep(1600);
+            }
+
+            const oldScore = existing?.resorts.find(r => r.id === trial.id)?.totalScore;
+            const oldText = oldScore === undefined ? "unavailable" : `${oldScore.toFixed(1)}/10`;
+            console.log(`Previous single-point score: ${oldText}`);
+            console.log(`Weighted three-height score: ${weightedTotal.toFixed(1)}/10`);
+            console.log("Weights: 20% low + 50% middle + 30% high.");
+          }
+
+          console.log("\nTest finished. No live resort scores were changed.");
+          EOF
+          npx tsx scripts/compare-zones-temp.ts
