@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-26",
+  "fetchedAt": "2026-11-26T01:51:16.323Z",
+  "resorts": [
+    {
+      "id": "val-thorens",
+      "name": "Val Thorens",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "courchevel",
+      "name": "Courchevel",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "meribel",
+      "name": "Méribel",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "la-plagne",
+      "name": "La Plagne",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "les-arcs",
+      "name": "Les Arcs",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "tignes",
+      "name": "Tignes",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "val-disere",
+      "name": "Val d'Isère",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "alpe-dhuez",
+      "name": "Alpe d'Huez",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "les-deux-alpes",
+      "name": "Les 2 Alpes",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    },
+    {
+      "id": "chamonix",
+      "name": "Chamonix Mont-Blanc",
+      "totalScore": 0,
+      "confidence": "low",
+      "summary": "Data unavailable — API error.",
+      "subScores": {
+        "snow": 0,
+        "weather": 0,
+        "altitude": 0,
+        "trend": 0
+      },
+      "forecast": [],
+      "error": "fetch failed"
+    }
+  ]
+}
