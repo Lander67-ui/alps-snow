@@ -1,156 +1,796 @@
 {
   "date": "2026-11-26",
-  "fetchedAt": "2026-11-26T01:51:16.323Z",
+  "fetchedAt": "2026-11-26T17:04:42.299Z",
   "resorts": [
     {
       "id": "val-thorens",
       "name": "Val Thorens",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 6.1,
+      "confidence": "high",
+      "summary": "No new snow, but cold temps are keeping the base firm. Good groomed skiing.",
       "subScores": {
-        "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "snow": 4,
+        "weather": 7.5,
+        "altitude": 9.9,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 1.5,
+        "freshSnow48h": 8.9,
+        "freshSnow72h": 8.9,
+        "temperature": -6.9,
+        "avgTemp48h": -5.3,
+        "windSpeed": 9,
+        "windGusts": 25,
+        "visibility": 160,
+        "cloudCover": 100,
+        "freezingLevel": 2120,
+        "snowDepth": 78,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": -2.8,
+        "forecastWindSpeed24h": 14,
+        "forecastRain24h": false,
+        "weatherCode": 77,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -9,
+          "tempMax": -7,
+          "windMax": 14,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -9,
+          "tempMax": -2,
+          "windMax": 16,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 2,
+          "snowfall": 0.1,
+          "tempMin": -5,
+          "tempMax": -2,
+          "windMax": 7,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 6.5,
+          "snowfall": 9.2,
+          "tempMin": -6,
+          "tempMax": -5,
+          "windMax": 8,
+          "summary": "Light snow",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "courchevel",
       "name": "Courchevel",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 3.8,
+      "confidence": "high",
+      "summary": "Recent rain has softened the snow. Expect heavy, wet conditions.",
       "subScores": {
         "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "weather": 6.5,
+        "altitude": 8.2,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 1.3,
+        "freshSnow48h": 4.3,
+        "freshSnow72h": 4.4,
+        "temperature": -2.6,
+        "avgTemp48h": -1.1,
+        "windSpeed": 4,
+        "windGusts": 13,
+        "visibility": 660,
+        "cloudCover": 100,
+        "freezingLevel": 1620,
+        "snowDepth": 21,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": true,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 0.9,
+        "forecastWindSpeed24h": 8,
+        "forecastRain24h": false,
+        "weatherCode": 77,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -6,
+          "tempMax": -1,
+          "windMax": 8,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -6,
+          "tempMax": 1,
+          "windMax": 14,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -1,
+          "tempMax": 3,
+          "windMax": 14,
+          "summary": "Mild",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 6.5,
+          "snowfall": 6.3,
+          "tempMin": -3,
+          "tempMax": -1,
+          "windMax": 5,
+          "summary": "Light snow",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "meribel",
       "name": "Méribel",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 3.7,
+      "confidence": "high",
+      "summary": "Recent rain has softened the snow. Expect heavy, wet conditions.",
       "subScores": {
         "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "weather": 6.5,
+        "altitude": 8.1,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 1.4,
+        "freshSnow48h": 6.7,
+        "freshSnow72h": 6.7,
+        "temperature": -2.6,
+        "avgTemp48h": -1.3,
+        "windSpeed": 4,
+        "windGusts": 9,
+        "visibility": 120,
+        "cloudCover": 100,
+        "freezingLevel": 1580,
+        "snowDepth": 11,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": true,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 1.3,
+        "forecastWindSpeed24h": 10,
+        "forecastRain24h": false,
+        "weatherCode": 77,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -7,
+          "tempMax": 0,
+          "windMax": 12,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -8,
+          "tempMax": 1,
+          "windMax": 14,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -1,
+          "tempMax": 3,
+          "windMax": 14,
+          "summary": "Mild",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 6.5,
+          "snowfall": 6.3,
+          "tempMin": -2,
+          "tempMax": 0,
+          "windMax": 5,
+          "summary": "Light snow",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "la-plagne",
       "name": "La Plagne",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 4,
+      "confidence": "high",
+      "summary": "Recent rain has softened the snow. Expect heavy, wet conditions.",
       "subScores": {
         "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "weather": 7.5,
+        "altitude": 8.1,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 0.1,
+        "freshSnow48h": 7.2,
+        "freshSnow72h": 7.2,
+        "temperature": -3.1,
+        "avgTemp48h": -1.6,
+        "windSpeed": 8,
+        "windGusts": 19,
+        "visibility": 12860,
+        "cloudCover": 100,
+        "freezingLevel": 1790,
+        "snowDepth": 72,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": true,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": -0.1,
+        "forecastWindSpeed24h": 8,
+        "forecastRain24h": false,
+        "weatherCode": 3,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -6,
+          "tempMax": -3,
+          "windMax": 8,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -7,
+          "tempMax": 1,
+          "windMax": 9,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 2,
+          "snowfall": 0.1,
+          "tempMin": -2,
+          "tempMax": 1,
+          "windMax": 8,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 6.5,
+          "snowfall": 8.7,
+          "tempMin": -3,
+          "tempMax": -1,
+          "windMax": 5,
+          "summary": "Light snow",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "les-arcs",
       "name": "Les Arcs",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 4.9,
+      "confidence": "high",
+      "summary": "No new snow, but cold temps are keeping the base firm. Good groomed skiing.",
       "subScores": {
-        "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "snow": 2.5,
+        "weather": 6.5,
+        "altitude": 8,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 1.1,
+        "freshSnow48h": 6.6,
+        "freshSnow72h": 6.6,
+        "temperature": -2.7,
+        "avgTemp48h": -1.8,
+        "windSpeed": 4,
+        "windGusts": 16,
+        "visibility": 1580,
+        "cloudCover": 100,
+        "freezingLevel": 1750,
+        "snowDepth": 63,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 0.5,
+        "forecastWindSpeed24h": 8,
+        "forecastRain24h": false,
+        "weatherCode": 85,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -5,
+          "tempMax": -2,
+          "windMax": 10,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -6,
+          "tempMax": 1,
+          "windMax": 11,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 2,
+          "snowfall": 0.1,
+          "tempMin": -2,
+          "tempMax": 2,
+          "windMax": 11,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 6.5,
+          "snowfall": 5.8,
+          "tempMin": -4,
+          "tempMax": -1,
+          "windMax": 6,
+          "summary": "Light snow",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "tignes",
       "name": "Tignes",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 5.3,
+      "confidence": "high",
+      "summary": "No new snow, but cold temps are keeping the base firm. Good groomed skiing.",
       "subScores": {
-        "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "snow": 3.3,
+        "weather": 7.5,
+        "altitude": 6.8,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 0.6,
+        "freshSnow48h": 5.7,
+        "freshSnow72h": 5.8,
+        "temperature": -2.3,
+        "avgTemp48h": -2.1,
+        "windSpeed": 1,
+        "windGusts": 5,
+        "visibility": 9440,
+        "cloudCover": 100,
+        "freezingLevel": 2020,
+        "snowDepth": 120,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": -1.1,
+        "forecastWindSpeed24h": 14,
+        "forecastRain24h": false,
+        "weatherCode": 3,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -7,
+          "tempMax": -4,
+          "windMax": 16,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -8,
+          "tempMax": -1,
+          "windMax": 16,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 2,
+          "snowfall": 0.3,
+          "tempMin": -3,
+          "tempMax": 1,
+          "windMax": 9,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 2,
+          "snowfall": 7.5,
+          "tempMin": -4,
+          "tempMax": -1,
+          "windMax": 10,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "val-disere",
       "name": "Val d'Isère",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 5.5,
+      "confidence": "high",
+      "summary": "No new snow, but cold temps are keeping the base firm. Good groomed skiing.",
       "subScores": {
-        "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "snow": 3.3,
+        "weather": 7.5,
+        "altitude": 8.5,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 0.4,
+        "freshSnow48h": 3.8,
+        "freshSnow72h": 3.8,
+        "temperature": -3.5,
+        "avgTemp48h": -3,
+        "windSpeed": 10,
+        "windGusts": 20,
+        "visibility": 16280,
+        "cloudCover": 100,
+        "freezingLevel": 1930,
+        "snowDepth": 121,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": false,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": -3.5,
+        "forecastWindSpeed24h": 10,
+        "forecastRain24h": false,
+        "weatherCode": 3,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -10,
+          "tempMax": -5,
+          "windMax": 4,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -11,
+          "tempMax": -4,
+          "windMax": 6,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 2,
+          "snowfall": 0.1,
+          "tempMin": -10,
+          "tempMax": -4,
+          "windMax": 5,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 5.5,
+          "snowfall": 2,
+          "tempMin": -7,
+          "tempMax": -3,
+          "windMax": 5,
+          "summary": "Cold & dry",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "alpe-dhuez",
       "name": "Alpe d'Huez",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 4.2,
+      "confidence": "high",
+      "summary": "Recent rain has softened the snow. Expect heavy, wet conditions.",
       "subScores": {
         "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "weather": 9,
+        "altitude": 7.9,
+        "trend": 5
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 3.3,
+        "freshSnow48h": 33.3,
+        "freshSnow72h": 33.3,
+        "temperature": -3.8,
+        "avgTemp48h": -1.9,
+        "windSpeed": 10,
+        "windGusts": 36,
+        "visibility": 18720,
+        "cloudCover": 0,
+        "freezingLevel": 1910,
+        "snowDepth": 75,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": true,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 1.5,
+        "forecastWindSpeed24h": 13,
+        "forecastRain24h": false,
+        "weatherCode": 1,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -4,
+          "tempMax": -2,
+          "windMax": 19,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -3,
+          "tempMax": 2,
+          "windMax": 22,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 2,
+          "snowfall": 0.1,
+          "tempMin": -3,
+          "tempMax": 1,
+          "windMax": 8,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 5.5,
+          "snowfall": 4.6,
+          "tempMin": -4,
+          "tempMax": -2,
+          "windMax": 7,
+          "summary": "Cold & dry",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "les-deux-alpes",
       "name": "Les 2 Alpes",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 4.2,
+      "confidence": "high",
+      "summary": "Recent rain has softened the snow. Expect heavy, wet conditions.",
       "subScores": {
-        "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "snow": 0.5,
+        "weather": 7.5,
+        "altitude": 7.9,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 6.7,
+        "freshSnow48h": 25.5,
+        "freshSnow72h": 25.5,
+        "temperature": -2.1,
+        "avgTemp48h": -0.7,
+        "windSpeed": 8,
+        "windGusts": 23,
+        "visibility": 18740,
+        "cloudCover": 70,
+        "freezingLevel": 1610,
+        "snowDepth": 14,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": true,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 1.5,
+        "forecastWindSpeed24h": 8,
+        "forecastRain24h": false,
+        "weatherCode": 2,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -5,
+          "tempMax": 0,
+          "windMax": 5,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -5,
+          "tempMax": 2,
+          "windMax": 10,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -1,
+          "tempMax": 3,
+          "windMax": 8,
+          "summary": "Mild",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 5.5,
+          "snowfall": 2.9,
+          "tempMin": -3,
+          "tempMax": 0,
+          "windMax": 4,
+          "summary": "Cold & dry",
+          "confidence": "estimate"
+        }
+      ]
     },
     {
       "id": "chamonix",
       "name": "Chamonix Mont-Blanc",
-      "totalScore": 0,
-      "confidence": "low",
-      "summary": "Data unavailable — API error.",
+      "totalScore": 3.7,
+      "confidence": "high",
+      "summary": "Recent rain has softened the snow. Expect heavy, wet conditions.",
       "subScores": {
         "snow": 0,
-        "weather": 0,
-        "altitude": 0,
-        "trend": 0
+        "weather": 6.5,
+        "altitude": 7.8,
+        "trend": 6
       },
-      "forecast": [],
-      "error": "fetch failed"
+      "rawData": {
+        "freshSnow24h": 3.6,
+        "freshSnow48h": 5.7,
+        "freshSnow72h": 5.7,
+        "temperature": -2.3,
+        "avgTemp48h": -1.5,
+        "windSpeed": 2,
+        "windGusts": 3,
+        "visibility": 260,
+        "cloudCover": 100,
+        "freezingLevel": 1720,
+        "snowDepth": 60,
+        "snowfallForecast24h": 0,
+        "snowfallForecast48h": 0,
+        "rainDetected24h": false,
+        "rainDetected48h": true,
+        "rainDetected72h": false,
+        "activeSnowfallRate": 0,
+        "forecastMaxTemp48h": 2.4,
+        "forecastWindSpeed24h": 10,
+        "forecastRain24h": false,
+        "weatherCode": 45,
+        "dataCompleteness": 1
+      },
+      "forecast": [
+        {
+          "date": "2026-11-27",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -6,
+          "tempMax": -1,
+          "windMax": 10,
+          "summary": "Cold & dry",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-28",
+          "estimatedScore": 5,
+          "snowfall": 0,
+          "tempMin": -6,
+          "tempMax": 2,
+          "windMax": 12,
+          "summary": "Mild",
+          "confidence": "reliable"
+        },
+        {
+          "date": "2026-11-29",
+          "estimatedScore": 2,
+          "snowfall": 0.1,
+          "tempMin": -4,
+          "tempMax": 2,
+          "windMax": 7,
+          "summary": "Rain risk",
+          "confidence": "estimate"
+        },
+        {
+          "date": "2026-11-30",
+          "estimatedScore": 5,
+          "snowfall": 1.6,
+          "tempMin": -5,
+          "tempMax": -2,
+          "windMax": 3,
+          "summary": "Cold & dry",
+          "confidence": "estimate"
+        }
+      ]
     }
   ]
 }
